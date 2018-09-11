@@ -54,15 +54,15 @@
     },
     "scripts": {
         "format": [
-            "vendor/bin/php-cs-fixer fix",
-            "php artisan ide-helper:models -W",
-            "php artisan ide-helper:meta",
-            "php artisan ide-helper:generate"
+            "@vendor/bin/php-cs-fixer fix",
+            "@php artisan ide-helper:models -W",
+            "@php artisan ide-helper:meta",
+            "@php artisan ide-helper:generate"
         ],
         "ide-helper": [
-            "php artisan ide-helper:models -W",
-            "php artisan ide-helper:meta",
-            "php artisan ide-helper:generate"
+            "@php artisan ide-helper:models -W",
+            "@php artisan ide-helper:meta",
+            "@php artisan ide-helper:generate"
         ],
         "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
