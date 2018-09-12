@@ -1,6 +1,5 @@
 <?php
 
-use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +12,6 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::group(['prefix' => 'auth:api'], function() {
+Route::group(['prefix' => 'auth:api'], function () {
     return 'Hello API!';
 });
